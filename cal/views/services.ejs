@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фитнесс Центр</title>
+  <link href="../css/style_nav_new.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <style>
+
+.bg_w{
+  width: 100%;
+  background-image: url('/img/schedule-bg.jpg') ;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.welcome  {
+    zoom: 1;
+    bottom: 198px;
+    background-color: transparent;
+    color: #fff;
+    margin: 0;
+    padding: 2px 25px 0px 30px;
+   position: absolute; 
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    right: 0px;
+    display: inline-block;
+    bottom: 10%;
+    width: 76%;
+    right: 0 !important;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+  /* добавить это свойство */
+}
+
+.bg-s{
+  width: 100%;
+ background: rgba(95, 95, 95, 0.562);
+ 
+ 
+}
+.service {
+  padding-top: 200px;
+  color: white;
+  background: rgba(255, 0, 0, 0.425);
+  align-items: center;
+  text-align: center;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-left: auto;
+  opacity: 1;
+  margin-right: auto;
+  flex-direction: column;
+  padding-bottom: 250px; 
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+
+}
+
+.service h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.service ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.service li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+table{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  margin: 0 auto;
+  width: 1170px;
+    text-align: center;
+    border: 1px solid #fff;
+top: 150px;
+z-index: 1;
+  }
+td
+{
+  z-index: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+    border: 1px solid #fff;
+}
+tr:hover{
+  background: #ff000033;
+}
+body{
+  background: #1c1c1c;
+}
+
+.under_header{
+  background: #ec4141;
+    position: relative;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+  line-height: normal;
+  font-size: normal;
+  }
+.tittle
+{
+  padding-top: 20px;
+  display: block;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+header
+{
+background: #000;
+position: relative;
+}
+.head{
+background: #000;
+}
+.conte
+{
+  position: relative;
+    background: #1c1c1c;
+    padding: 50px 0 0px 0;
+}
+.price h3{
+  line-height: 1.1em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.price span{
+  color: #e62026;
+  text-transform: none;
+}
+p {
+
+    margin: 0 0 10px;
+font-size: 18px;
+}
+.menu {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+   display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+    padding: 34px 30px 34px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    width: 270px;
+
+    float: left;
+    background: #4a4a4a;
+    line-height: 30px;
+    border-left: 2px solid #ec4141 !important;
+    border-radius: 0 0 15px 0;
+    border: 1px solid #5a5a5a;
+}
+
+.menu li a
+{
+  font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+   color: #ec4141;
+   text-decoration: none;
+}
+.details{
+  line-height: 1;
+  font-size: 13px;
+    color: #b6b6b6;
+    font-weight: normal;
+}
+.pric{
+  color: #b6b6b6;
+  font-size: 15px;
+    float: right;
+    font-weight: 600;
+
+}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select
+{
+  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select:not(:checked) option {
+  font-size: 14px;
+  background-color: #272727;
+  height: 50px;
+
+}
+select:not(:checked) option  span{
+ float: right;
+
+}
+option:hover{
+  color: #ec4141;
+}
+.btn {
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+}
+button
+{
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+
+}
+textarea{
+  color: #b6b6b6;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+}
+.form_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services form, .services_add form {
+  margin-bottom: 100px;
+  width: 500px;
+  margin-right: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.autor
+{
+width: 1180px;
+height: 337px;
+text-align: center;
+}
+.autor h1
+{
+  padding-top: 110px;
+  text-transform: uppercase;
+}
+.autor a
+{
+  text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+}
+.con
+{
+  color: #b6b6b6;
+  font-size: 15px;
+    font-weight: 600;
+float: left;
+}
+.manipul
+{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+}
+#min_max
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.manipul button{
+margin-right:40px;
+}
+#min_max input
+{
+  width: 70px;
+
+}
+#min_price, #max_price
+{
+font-size: 20px;
+}
+.btn-delete
+{
+width: 40px;
+height: 20px;
+}
+.modal {
+			display: none;
+			position: fixed;
+      align-items: center;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.modal-content {
+      color:#ffffff;
+			background-color: black;
+			margin: 10% auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 80%;
+			max-width: 600px;
+			position: relative;
+		}
+    .close {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			color: #ccc;
+			cursor: pointer;
+      align-items: center;
+		}
+
+    .image-block1 {
+      margin-right: 50px;
+      border-left: 5px solid #ec4141;
+      height: 250px;
+      width: 500px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  background-image: url('/img/strong.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-right-radius: 10px;
+}
+.image-block2
+{
+  margin-right: 50px;
+      border-left: 5px solid #ec4141;
+      height: 250px;
+      width: 500px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  background-image: url('/img/joga.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-right-radius: 10px;
+}
+
+.image-block3{
+  margin-right: 50px;
+      border-left: 5px solid #ec4141;
+      height: 250px;
+      width: 500px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  background-image: url('/img/dance.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-right-radius: 10px;
+}
+
+.image-block4 {
+  margin-right: 50px;
+      border-left: 5px solid #ec4141;
+      height: 250px;
+      width: 500px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  background-image: url('/img/ss2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-right-radius: 10px;
+}
+.tra
+{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.trainers {
+  margin-left: 50px;
+      height: 150px;
+      width: 200px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-bottom-right-radius: 50px;
+      border-left: 5px solid #ec4141;
+}
+
+
+.image-content {
+  bottom: 20px; /* Отступ от нижней границы блока */
+  right: 20px; /* Отступ от правой границы блока */
+  padding: 20px;
+  background-color: #1c1c1ca4;; /* Прозрачный фон */
+  color: #ffffff;
+}
+
+
+
+.image-content h2 {
+  margin: 0;
+  color: #ffffff;/* Цвет заглавия */
+}
+
+.button1 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+	</style>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <div class="under_header"> <div class="container"><h2 class="tittle">Услуги</h2></div></div>
+	<div class="container">
+    <div class="container2">
+    
+    
+      <div class="image-block1">
+        <div class="image-content">
+          <h2>Силовая зона</h2>
+          <button id="uk2" class="button1"> ОПИСАНИЕ</button>
+        </div>
+  
+    </div>
+  
+  
+  
+    
+    <div class="image-block2">
+      <div class="image-content">
+        <h2>Танцевальная комната</h2>
+        <button id="uk1" class="button1"> ОПИСАНИЕ</button>
+      </div>
+  
+  </div>
+  
+  
+  
+  
+  <div class="image-block3">
+    <div class="image-content">
+      <h2>Йога</h2>
+      <button id="uk3" class="button1"> ОПИСАНИЕ</button>
+    </div>
+  
+  </div>
+  
+  
+  
+  
+  <div class="image-block4">
+    <div class="image-content">
+      <h2>Кардио зона</h2>
+      <button id="uk4" class="button1"> ОПИСАНИЕ</button>
+    </div>
+  
+  </div>
+  
+  
+  
+    </div>
+
+  </div>
+ 
+    
+ 
+
+  <div class='modal' id="modal" style="display: none;">
+    <div class="modal-content" id="modal-content">
+      <div id="additional-info"></div>
+      <button id="close" class="btn">Назад!</button>
+  </div>
+ </div>
+  <br>
+    <%- include('partials/footer.ejs') %>
+
+<script>
+
+$('#uk1').click(function() {
+  var modal = document.getElementById("modal");
+  var mod_cont = document.getElementById("modal-content"); 
+  modal.style.display = "block";
+  $.getJSON("/json/dance.json", function(data) {
+            // отображение дополнительной информации
+            
+                var trainersHtml = "<h2>" + data.name + "</h2> <br> <p>" + data.description + "</p>"+"<div class='tra'>";
+                for (var i = 0; i < data.traners.length; i++) {
+                trainersHtml += "<img src='" + data.traners[i] + "' class='trainers'>";
+                }
+                trainersHtml=trainersHtml+"</div>";
+                console.log(trainersHtml);
+                $("#additional-info").html(trainersHtml);
+             if(data.title=="Additional Information")  console.log("trueee")
+          console.log(data.name[1])
+          })
+      
+  $('#close').click(function() 
+        { modal.style.display = "none"; }
+        );
+});
+
+$('#uk2').click(function() {
+  var modal = document.getElementById("modal");
+  var mod_cont = document.getElementById("modal-content"); 
+  modal.style.display = "block";
+  $.getJSON("/json/streng.json", function(data) {
+            // отображение дополнительной информации
+            
+                var trainersHtml = "<h2>" + data.name + "</h2> <br> <p>" + data.description + "</p>"+"<div class='tra'>";
+                for (var i = 0; i < data.traners.length; i++) {
+                trainersHtml += "<img src='" + data.traners[i] + "' class='trainers'>";
+                }
+                trainersHtml=trainersHtml+"</div>";
+                console.log(trainersHtml);
+                $("#additional-info").html(trainersHtml);
+             if(data.title=="Additional Information")  console.log("trueee")
+          console.log(data.name[1])
+          })
+      
+  $('#close').click(function() 
+        { modal.style.display = "none"; }
+        );
+});
+
+
+$('#uk3').click(function() {
+  var modal = document.getElementById("modal");
+  var mod_cont = document.getElementById("modal-content"); 
+  modal.style.display = "block";
+  $.getJSON("/json/joga.json", function(data) {
+            // отображение дополнительной информации
+            
+                var trainersHtml = "<h2>" + data.name + "</h2> <br> <p>" + data.description + "</p>"+"<div class='tra'>";
+                for (var i = 0; i < data.traners.length; i++) {
+                trainersHtml += "<img src='" + data.traners[i] + "' class='trainers'>";
+                }
+                trainersHtml=trainersHtml+"</div>";
+                console.log(trainersHtml);
+                $("#additional-info").html(trainersHtml);
+             if(data.title=="Additional Information")  console.log("trueee")
+          console.log(data.name[1])
+          })
+      
+  $('#close').click(function() 
+        { modal.style.display = "none"; }
+        );
+});
+
+
+$('#uk4').click(function() {
+  var modal = document.getElementById("modal");
+  var mod_cont = document.getElementById("modal-content"); 
+  modal.style.display = "block";
+  $.getJSON("/json/cardio.json", function(data) {
+            // отображение дополнительной информации
+            
+                var trainersHtml = "<h2>" + data.name + "</h2> <br> <p>" + data.description + "</p>"+"<div class='tra'>";
+                for (var i = 0; i < data.traners.length; i++) {
+                trainersHtml += "<img src='" + data.traners[i] + "' class='trainers'>";
+                }
+                trainersHtml=trainersHtml+"</div>";
+                console.log(trainersHtml);
+                $("#additional-info").html(trainersHtml);
+             if(data.title=="Additional Information")  console.log("trueee")
+          console.log(data.name[1])
+          })
+      
+  $('#close').click(function() 
+        { modal.style.display = "none"; }
+        );
+});
+
+
+</script>
+ </body>
+</html>

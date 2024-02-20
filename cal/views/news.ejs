@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="../css/style_nav_new2.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="../css/pid.css" rel="stylesheet" type="text/css">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<title>Фитнесс Центр</title>
+	<style>
+		
+.under_header{
+  background: #ec4141;
+    position: relative;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+  line-height: normal;
+  font-size: normal;
+  }
+.tittle
+{
+  padding-top: 20px;
+  display: block;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+header
+{
+background: #000;
+position: relative;
+}
+.head{
+background: #000;
+}
+.conte
+{
+  position: relative;
+    background: #1c1c1c;
+    padding: 50px 0 0px 0;
+}
+.price h3{
+  line-height: 1.1em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.price span{
+  color: #e62026;
+  text-transform: none;
+}
+p {
+
+    margin: 0 0 10px;
+font-size: 18px;
+}
+.menu {
+  margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+   display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+   display: flex;
+  flex-wrap: wrap;
+}
+
+
+.menu li {
+    padding: 34px 30px 34px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+
+    float: left;
+    background: #4a4a4a;
+    line-height: 30px;
+    border-left: 2px solid #ec4141 !important;
+    border-radius: 0 0 15px 0;
+    border: 1px solid #5a5a5a;
+}
+.details{
+  line-height: 1.2;
+  font-size: 20px;
+    color: #b6b6b6;
+    font-weight: normal;
+}
+.pric{
+  color: #b6b6b6;
+  font-size: 15px;
+    float: right;
+    font-weight: 600;
+
+}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select
+{
+  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select:not(:checked) option {
+  font-size: 14px;
+  background-color: #272727;
+  height: 50px;
+
+}
+select:not(:checked) option  span{
+ float: right;
+
+}
+option:hover{
+  color: #ec4141;
+}
+.btn {
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+    float: right;
+}
+button
+{
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+    float: right;
+
+}
+textarea{
+  color: #b6b6b6;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+}
+.form_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services form, .services_add form {
+  margin-bottom: 100px;
+  width: 500px;
+  margin-right: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.autor
+{
+width: 1180px;
+height: 337px;
+text-align: center;
+}
+.autor h1
+{
+  padding-top: 110px;
+  text-transform: uppercase;
+}
+.news
+{
+  min-height: 700px;
+}
+.conte {
+    position: relative;
+    background: #1c1c1c;
+}
+	</style>
+</head>
+<body>
+	<%- include('partials/nav.ejs') %>
+  <div class="under_header"> <div class="container"><h2 class="tittle">Акции</h2></div></div>
+  <div class="conte">
+    <div class="container">
+
+      <div class="news">
+        <ul class="menu">   
+          <% if (news.length) { %>
+           <% news.forEach(({id, date, text, author, tit}) => { %>
+           <li>
+     <article>
+     <h2>
+       <a href="/news/<%= id %>"><%= tit %></a>
+     </h2>
+     
+     <% if (role) { %>
+       <% if (role === 'brain'|| role === 'muscles') { %>
+         <button class="btn-delete" data-id="<%= id%>"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+     <% } %>
+     <% } %>
+     
+     
+     
+     <div class="info">
+     
+     <div class="details"><%= text%></div>
+     <div class="pric">Автор:<%= author%></div>  
+      
+     </div>
+     </article>
+     
+           </li>
+             <% }) %>
+           <% } %>
+         </ul>
+     
+    </div>
+    
+    </div>
+  </div>
+
+  <%- include('partials/message.ejs') %>
+ 
+  <%- include('partials/footer.ejs') %>
+
+
+  <script>
+
+$('#uk').click(function() {
+    var help = document.getElementById("help");
+    var help_cont = document.getElementById("help_content"); 
+      help.style.display = "block";
+    
+      $('#close').click(function() 
+          { help.style.display = "none"; }
+          )
+    });
+    
+    document.addEventListener('click', (e)=>{
+    const id = e.target?.dataset?.id || null;
+    if(id){
+    fetch('/news/'+id, { method : 'DELETE',}).then(()=> {window.location.reload();});
+    }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<header>
+ <div class="head">
+  <div class="container">
+    <div class="logo">
+      Training<em>Studio</em>
+      <!-- insert logo image here -->
+    </div>
+   
+      <nav>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li class="nav-service"><a href="#">Услуги</a>
+          <ul>
+            <li><a href="/table">Посмотреть расписание занятий</a></li>
+            <li><a href="/time">Купить абонемент</a></li>
+            <li><a href="/news">Посмотреть акции</a></li>
+            <li><a href="/serv">Зоны центра</a></li>
+          </ul>
+        </li>
+  <% if (role) { %>
+      <% if (role === 'brain'|| role === 'muscles') { %>
+        <li class="nav-admin"><a href="#">Админ меню</a>
+          <ul>
+            <li><a href="/add-news">Добавить акцию</a></li>
+            <li><a href="/chek_cup">Посмотреть список купонов</a></li>
+            <li><a href="/message">Консультирование</a></li>
+            <% if (role === 'brain') { %>
+              <li><a href="/work-whith-account">Работа с аккаунтами</a></li>
+            <% } %>
+          </ul>
+        </li>
+      <% } %>
+    <% } %>
+    <li><a class="authorisation" href="/login">Вход</a></li>
+    <li><a class="authorisation" href="/register">Регистрация</a></li>
+  </ul> </nav></div>
+ </div>
+</header>

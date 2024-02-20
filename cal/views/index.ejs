@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фитнесс Центр</title>
+  <link href="../css/style_nav_new.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <link href="../css/pid.css" rel="stylesheet" type="text/css">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <style>
+.bg_w{
+  width: 100%;
+  background-image: url('/img/aaaaaaaaaaaaaa.jpg') ;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.welcome  {
+    zoom: 1;
+    bottom: 198px;
+    background-color: transparent;
+    color: #fff;
+    margin: 0;
+    padding: 2px 25px 0px 30px;
+   position: absolute; 
+   z-index: 998;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    right: 0px;
+    display: inline-block;
+    bottom: 10%;
+    width: 76%;
+    right: 0 !important;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+  /* добавить это свойство */
+}
+
+.bg-s{
+  width: 100%;
+ background: rgba(95, 95, 95, 0.562);
+ 
+ 
+}
+.service {
+  padding-top: 200px;
+  color: white;
+  background: rgba(255, 0, 0, 0.425);
+  align-items: center;
+  text-align: center;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-left: auto;
+  opacity: 1;
+  margin-right: auto;
+  flex-direction: column;
+  padding-bottom: 250px; 
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+
+}
+
+.service h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.service ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.service li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+	<main>
+   <div class="bg_w"> <div class="welcome"><h1>ЗАКАЛЯЙ ТЕЛО - УКРЕПЛЯЙ ДУХ</h1>
+    </div></div>
+
+    </main>
+    <%if (user){ %>
+    <%- include('partials/message.ejs') %>
+    <% }%>
+    <%- include('partials/footer.ejs') %>
+
+<script>
+  $('#uk').click(function() {
+    var help = document.getElementById("help");
+    var help_cont = document.getElementById("help_content"); 
+      help.style.display = "block";
+    
+      $('#close').click(function() 
+          { help.style.display = "none"; }
+          )
+    });
+  </script>
+ </body>
+</html>

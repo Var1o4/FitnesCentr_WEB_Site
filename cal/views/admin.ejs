@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+  <link href="../css/style_nav.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Добавление новости</title>
+	<style>
+/* Стили для навигационного меню */
+
+/* Стили для формы добавления новости */
+body {
+			font-family: Arial, sans-serif; 
+      background: rgba(95, 95, 95, 0.562);
+  margin: 0 10%; /* установите отступы слева и справа в 10% */
+  width: 80%; /* установите ширину контейнера в 80% */
+  height: 900px;
+		}
+    html
+    {
+    background: white;
+    }
+form
+{
+padding-top: 100px;
+}
+#post-form {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#post-form h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#post-form ul {
+  margin: 20px;
+  padding: 0;
+}
+
+#post-form ul li {
+  margin-right: 20px;
+}
+
+#post-form ul li:last-child {
+  margin-right: 0;
+}
+
+#post-form ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#post-form ul li a:hover {
+  text-decoration: underline;
+}
+form ul {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form ul li {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+form ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form ul li a:hover {
+  background-color: #ccc;
+}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+    <ul>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/time">Услуги</a></li>
+      <li><a href="/news">Новости</a></li>
+      <% if (role) { %>
+        <% if (role === 'brain'|| role === 'muscles') { %>
+          <li><a href="/admin">Админ меню</a></li>
+      <% } %>
+    <% } %>
+    
+    <li><a class="authorisation" href="/login">Вход</a></li>
+    <li><a class="authorisation" href="/register">Регистрация</a></li>
+  
+    </ul>
+    
+  </nav>
+	<form id="post-form" method="post" action="/add-news">
+		<ul>
+      <li><a href="/add-news">Добавить новость</a></li>
+      <li><a href="/chek_cup">Посмотреть список купонов</a></li>
+      <% if (role) { %>
+        <% if (role === 'brain') { %>
+          <li><a href="/work-whith-account">Работа с аккаунтами</a></li>
+      <% } %>
+    <% } %>
+      
+    </ul>
+	</form>
+  <div class="footer">	
+    <ul>
+    <li>Телефон: 8-800-123-45-67</li>
+    <li>Email: info@fitnesscenter.com</li>
+  </ul>
+
+  <a href="/comment" class="button">Оставить комментарий</a>
+</div>
+</body>
+</html>

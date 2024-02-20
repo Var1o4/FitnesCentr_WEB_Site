@@ -1,0 +1,55 @@
+
+<div class="container">
+  <%if(role === 'brain' || role === 'muscles'){%>
+<%} else{ %>
+  <button id="uk"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+<%}%>
+ 
+<div class="help" id="help">
+  <div class="message_cintainer">
+    <div class="help_header" id="help_header">
+      <div class="logo">
+        Training<em>Studio</em>
+        <!-- insert logo image here -->
+      </div>
+    </div>
+    <button id="close" class="btn">Назад!</button>
+    <div class="help_content" id="help_content">
+      <% messages.forEach(message => { %>
+        <div class="message">
+          <% message.text.forEach(msg => { %>
+            <% if (msg.sender === 'brain' || msg.sender === 'muscles') { %>
+            <p class="admin_mesage"><%= msg.content %></p>
+
+            <% } else { %>
+             <div class="user_message_cont"> <p class="user_mesage"><%= msg.content %></p></div>
+              <% } %>
+          <% }) %>
+        </div>
+      <% }) %>
+  
+
+      
+    <% messages.forEach(({user, name, text, price}) => { %>
+      <%if(role === 'brain' || role === 'muscles'){%>
+      <h2>
+        <form action="/message/<%= user %>" class="send_message" method="post">
+          <input type="text" name="text" id="text_send" placeholder="Your Message" required>
+           <button class="send"  type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+         </form>
+      </h2>
+<%} else{ %>
+      
+      <form class="send_message" action="/message" method="post">
+        <input type="text" name="text" id="text_send" placeholder="Your message" required>
+         <button class="send" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+       </form>
+<%}%>
+
+<% }) %>
+  </div>
+  </div>
+
+
+</div>
+</div>

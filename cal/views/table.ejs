@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фитнесс Центр</title>
+  <link href="../css/style_nav_new.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <link href="../css/pid.css" rel="stylesheet" type="text/css">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <style>
+
+.bg_w{
+  width: 100%;
+  background-image: url('/img/schedule-bg.jpg') ;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.welcome  {
+    zoom: 1;
+    bottom: 198px;
+    background-color: transparent;
+    color: #fff;
+    margin: 0;
+    padding: 2px 25px 0px 30px;
+   position: absolute; 
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    right: 0px;
+    display: inline-block;
+    bottom: 10%;
+    width: 76%;
+    right: 0 !important;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+  /* добавить это свойство */
+}
+
+.bg-s{
+  width: 100%;
+ background: rgba(95, 95, 95, 0.562);
+ 
+ 
+}
+.service {
+  padding-top: 200px;
+  color: white;
+  background: rgba(255, 0, 0, 0.425);
+  align-items: center;
+  text-align: center;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-left: auto;
+  opacity: 1;
+  margin-right: auto;
+  flex-direction: column;
+  padding-bottom: 250px; 
+  text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+
+}
+
+.service h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.service ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.service li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+table{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  margin: 0 auto;
+  width: 1170px;
+    text-align: center;
+    border: 1px solid #fff;
+top: 150px;
+z-index: 1;
+  }
+td
+{
+  z-index: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+    border: 1px solid #fff;
+}
+tr:hover{
+  background: #ff000033;
+}
+
+	</style>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+	<main>
+   <div class="bg_w"> <div class="container">  <body onload="updateTable()">
+    <!-- <p>Выберите день недели:</p>
+    <button onclick="updateTable()">Все дни</button>
+    <button onclick="updateTable('понедельник')">Понедельник</button>
+    <button onclick="updateTable('вторник')">Вторник</button>
+    <button onclick="updateTable('среда')">Среда</button>
+    <button onclick="updateTable('четверг')">Четверг</button>
+    <button onclick="updateTable('пятница')">Пятница</button> -->
+    <table id="schedule">
+    <!-- здесь будет генерироваться таблица -->
+    </table></div></div>
+
+    </main>
+    <%- include('partials/message.ejs') %>
+    <%- include('partials/footer.ejs') %>
+
+<script>
+
+
+$('#uk').click(function() {
+    var help = document.getElementById("help");
+    var help_cont = document.getElementById("help_content"); 
+      help.style.display = "block";
+    
+      $('#close').click(function() 
+          { help.style.display = "none"; }
+          )
+    });
+  
+function updateTable(day) {
+  // получаем данные из файла time.json
+  var data = {
+    "Силовой зал":{"понедельник":"10:00","вторник":"10:00","среда": "12:00", "четверг": "9:00","пятница":"12:00"},
+    "Кардио зона":{"понедельник":"12:00","вторник":"13:00","среда": "14:00", "четверг": "11:00","пятница":"12:00"},
+    "Танц-комната":{"понедельник":"18:00","вторник":"18:00","среда": "18:00", "четверг": "18:00","пятница":"18:00"},
+    "Йога":{"понедельник":"17:00","вторник":"16:00","среда": "10:00", "четверг": "15:00","пятница":"18:00"}
+  };
+  
+  // получаем таблицу
+  var table = document.getElementById("schedule");
+  
+  // очищаем таблицу
+  table.innerHTML = "";
+  
+  // создаем заголовки
+  var row = table.insertRow();
+  var daysOfWeek = ["понедельник", "вторник", "среда", "четверг", "пятница"];
+  var header = row.insertCell();
+  header.innerHTML = "";
+  for (var i = 0; i < daysOfWeek.length; i++) {
+    var cell = row.insertCell();
+    cell.innerHTML = daysOfWeek[i];
+  }
+  
+  // создаем строки с данными
+  for (var activity in data) {
+    row = table.insertRow();
+    var cell = row.insertCell();
+    cell.innerHTML = activity;
+    for (var i = 0; i < daysOfWeek.length; i++) {
+      cell = row.insertCell();
+      cell.innerHTML = data[activity][daysOfWeek[i]];
+    }
+  }
+  
+  // выделяем выбранный день
+  if (day) {
+    var cells = table.getElementsByTagName("td");
+    for (var i = 0; i < cells.length; i++) {
+      if (cells[i].innerHTML === day) {
+        cells[i].style.backgroundColor = "#f2f2f2";
+      } else {
+        cells[i].style.backgroundColor = "";
+      }
+    }
+  }
+}
+
+</script>
+ </body>
+</html>

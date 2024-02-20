@@ -1,0 +1,173 @@
+#uk
+{
+position: absolute;
+right: 50px;
+bottom: 40px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+  background-color: #ec4141;
+}
+.help
+{   
+  display: none;
+  position: absolute;
+  z-index: 900;
+  right: 40px;
+  bottom: 20px;
+  border-radius: 10px;
+background: #1c1c1c;
+width: 350px;
+height: 450px;
+border: 3px solid #3d3535;}
+
+.help #close
+{
+position:absolute;
+width: 100%;
+height: 20px;
+
+}
+.help_header
+{  border-radius: 10px 10px 0 0;
+
+align-items: center;
+text-align: center;
+width: 100%;
+height: 70px;
+background: #000;
+}
+.logo
+{
+  padding-left: 15px;
+}
+#text_send
+{
+      background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 80%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #b6b6b6;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+button
+{
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+   
+
+}
+.send
+{
+  margin-top: 10px;
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    display: inline-block;
+
+}
+.message_cintainer
+{
+position: relative;
+width: 100%;
+height: 100%;
+}
+.send_message
+{
+  background:  #1c1c1c;
+  border: 1px solid #3d3535;
+  width: 100%;
+position: absolute;
+bottom: 0px;
+display: inline-block;
+ }
+
+
+.admin_mesage
+{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 55%;
+width: 40%;
+font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-radius: 10px 10px 0 10px;
+    border-color: #ec4141;
+    min-height: 40px;
+    word-wrap: break-word;
+   overflow: visible;
+   font-size: 14px;
+  
+}
+
+
+.user_mesage
+
+{
+
+
+margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+margin-right: 55%;
+width: 40%;
+font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-radius: 10px 10px 10px 0;
+    border-color: #ec4141;
+    min-height: 40px;
+    word-wrap: break-word;
+   overflow: visible;
+   font-size: 14px;
+} 
+
+.message {
+  line-height: 1;
+  flex-direction: column;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto; /* Добавляет вертикальный скроллер при необходимости */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.help_content
+{
+  margin-top: 20px;
+}
+.user_message_cont
+{
+width: 100%;
+min-height: 40px;
+}
+::-webkit-scrollbar {
+  opacity: 0;
+}

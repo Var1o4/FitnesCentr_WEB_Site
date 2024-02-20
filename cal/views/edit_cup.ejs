@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css/style_nav_new2.css" rel="stylesheet" type="text/css">
+  <link href="../css/style_footer.css" rel="stylesheet" type="text/css">
+  <title>Добавление новости</title>
+	<style>
+		.under_header{
+  background: #ec4141;
+    position: relative;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+  line-height: normal;
+  font-size: normal;
+  }
+.tittle
+{
+  padding-top: 20px;
+  display: block;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+header
+{
+background: #000;
+position: relative;
+}
+.head{
+background: #000;
+}
+.conte
+{
+  position: relative;
+    background: #1c1c1c;
+    padding: 50px 0 0px 0;
+}
+.price h3{
+  line-height: 1.1em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.price span{
+  color: #e62026;
+  text-transform: none;
+}
+p {
+
+    margin: 0 0 10px;
+font-size: 18px;
+}
+.menu {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+   display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+    padding: 34px 30px 34px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    width: 270px;
+
+    float: left;
+    background: #4a4a4a;
+    line-height: 30px;
+    border-left: 2px solid #ec4141 !important;
+    border-radius: 0 0 15px 0;
+    border: 1px solid #5a5a5a;
+}
+.details{
+  line-height: 1;
+  font-size: 13px;
+    color: #b6b6b6;
+    font-weight: normal;
+}
+.pric{
+  color: #b6b6b6;
+  font-size: 15px;
+    float: right;
+    font-weight: 600;
+
+}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select
+{
+  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    
+    font-size: 14px;
+    padding: 4px;
+    color: #b6b6b6;
+}
+
+select:not(:checked) option {
+  font-size: 14px;
+  background-color: #272727;
+  height: 50px;
+
+}
+select:not(:checked) option  span{
+ float: right;
+
+}
+option:hover{
+  color: #ec4141;
+}
+.btn {
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+    float: right;
+}
+button
+{
+  font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    background: #ec4141;
+    border-color: #ec4141;
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+    float: right;
+
+}
+textarea{
+  color: #b6b6b6;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 4px;
+}
+.form_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services form, .services_add form {
+  margin-bottom: 100px;
+  width: 500px;
+  margin-right: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.autor
+{
+width: 1180px;
+height: 337px;
+text-align: center;
+}
+.autor h1
+{
+  padding-top: 110px;
+  text-transform: uppercase;
+}
+.autor a
+{
+  text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+   color: #ec4141;
+}
+form {
+  margin-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  width: 40%;
+}
+.container form{
+min-height: 500px;
+}
+	</style>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <div class="under_header"> <div class="container"><h2 class="tittle">редактировать аккаунт</h2></div></div>
+<div class="conte">
+  
+	<div class="container">
+    <form id="user-form" method="post" action="/edit_cup/<%= cupon.id%>?_method=PUT">
+          <input type="text" class="form control" id="name" name="name" value="<%= cupon.name%>" placeholder="Введите абонемента" required>
+          <br>
+          <textarea id="text" name="text" rows="4" cols="50" value="<%= cupon.text%>" placeholder="Введите описание" required></textarea>
+        <br>
+        <input type="number" step="0.01" min="0" max="1000" name="price" id="price" value="<%= cupon.price%>" placeholder="Введите цену" required>
+          <br>
+          <input type="number" step="1" min="0" max="12" name="contin" id="contin" value="<%= cupon.contin%>" placeholder="Введите продолжительност абонемента" required>
+        <br>
+          <button type="submit">Изменить</button>
+
+    </form>
+  </div>
+</div>
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>
